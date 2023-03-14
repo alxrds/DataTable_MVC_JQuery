@@ -1,0 +1,33 @@
+<?php require VIEWS_PATH . "includes/header.phtml"?>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col col-md-6">Book Data</div>
+                <div class="col col-md-6" align="right">
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#data-book">Add</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="book_table" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Escritor</th>
+                            <th>Editora</th>
+                            <th>Gênero</th>
+                            <th>Páginas</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<?php require VIEWS_PATH . "book/form.phtml"?>
+<?php require VIEWS_PATH . "includes/footer.phtml"?>
